@@ -29,8 +29,7 @@ def Service_Provider_Of_Num(FoneNumber= int):
 
 def Get_Location_Of_Phone_Number(FoneNumber= int):
     '''Get The Location Of The Phone Number. 
-    !!! I WILL NOT BE INCLUDING MY OPENCAGE API KEY, 
-    YOU CAN GET IT YOUR SELF BY MAKING AN ACCOUNT FOR FREE ONLINE!!!'''
+    !!! YOU CAN GET IT YOUR SELF A API KEY BY MAKING AN OPENCAGE ACCOUNT FOR FREE ONLINE!!!'''
 
     the_phonenum = phonenumbers.parse(FoneNumber)
     location = gc.description_for_number(the_phonenum, 'en')
